@@ -1,0 +1,26 @@
+Node n0 = new Node(100,"A");
+Node[] n1c = {n0,null,null,null,null};
+Node n1 = new Node(101,"B",n1c);
+Node n2 = new Node(102,"C");
+Node[] n3c = {n0,n1,n2,null,null};
+Node n3 = new Node(103,"D",n3c);
+Node n4 = new Node(104,"E");
+Node n5 = new Node(-5, "F");
+
+BSTree B = new BSTree();
+B.AddNode(n0);
+B.Print();
+B.AddNode(n1);
+B.Print();
+B.AddNode(n2);
+B.Print();
+B.AddNode(n3);
+B.Print();
+B.AddNode(n1);
+B.Print();
+B.AddNode(n3);
+B.Print();
+B.AddNode(n5);
+B.Print();
+B.AddNode(n4);
+B.Print();
